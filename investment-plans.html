@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Plans</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+
+<body class="body-refer">
+    <div id="sidebar">
+		<button onclick="closeSidebar()">close</button>
+		<h3>Hi.</h3>
+		<br>
+		<hr>
+		<a href="">Dashboard</a>
+		<a href="">Account</a>
+		<a href="">Support</a>
+		<a href="">P/L records</a>
+		<a href="">Transactions history</a>
+	</div>
+    <h1> <button onclick="openSidebar()">open sidebar</button> BROKER.COM</h1>
+    <h3 id="invest">Investment Plans</h3>
+    <section class="bronze">
+        <span id="fixed">fixed price</span>
+        <h6 id="class">BRONZE</h6>
+        <h3 id="class-amount">$500</h3>
+        <ul>
+            <li>
+                <span id="text">Minimum Possible Deposit:</span>
+                <span id="amount">$500</span>
+            </li>
+            <li>
+                <span id="text">Maximum Possible Deposit:</span>
+                <span id="amount">$2500</span>
+            </li>
+            <li>
+                <span id="text">Minimum Return:</span>
+                <span id="amount">$675</span>
+            </li>
+            <li>
+                <span id="text">Maximum Return:</span>
+                <span id="amount">$1500</span>
+            </li>
+            <li>
+                <span id="text">Gift Bonus:</span>
+                <span id="amount">$125</span>
+            </li>
+            <li>
+                <span id="text">Duration:</span>
+                <span id="amount">One week</span>
+            </li>
+        </ul>
+        <form action="" method="post" class="class-form">
+            <label for="input-amount">
+                Amount to invest: ($500 default)
+            </label>
+            <input type="text" name="input-amount" id="input-amount">
+            <button type="submit" id="submit-amount">
+                Join Plan
+            </button>
+        </form>
+    </section>
+    <section class="silver">
+        <span id="fixed">fixed price</span>
+        <h6 id="class">SILVER</h6>
+        <h3 id="class-amount">$1000</h3>
+        <ul>
+            <li>
+                <span id="text">Minimum Possible Deposit:</span>
+                <span id="amount">$1000</span>
+            </li>
+            <li>
+                <span id="text">Maximum Possible Deposit:</span>
+                <span id="amount">$5000</span>
+            </li>
+            <li>
+                <span id="text">Minimum Return:</span>
+                <span id="amount">$1250</span>
+            </li>
+            <li>
+                <span id="text">Maximum Return:</span>
+                <span id="amount">$2500</span>
+            </li>
+            <li>
+                <span id="text">Gift Bonus:</span>
+                <span id="amount">$250</span>
+            </li>
+            <li>
+                <span id="text">Duration:</span>
+                <span id="amount">Three weeks</span>
+            </li>
+        </ul>
+        <form action="" method="post" class="class-form">
+            <label for="input-amount">
+                Amount to invest: ($1000 default)
+            </label>
+            <input type="text" name="input-amount" id="input-amount">
+            <button type="submit" id="submit-amount">
+                Join Plan
+            </button>
+        </form>
+    </section>
+    <section class="gold">
+        <span id="fixed">fixed price</span>
+        <h6 id="class">GOLD</h6>
+        <h3 id="class-amount">$2000</h3>
+        <ul>
+            <li>
+                <span id="text">Minimum Possible Deposit:</span>
+                <span id="amount">$2000</span>
+            </li>
+            <li>
+                <span id="text">Maximum Possible Deposit:</span>
+                <span id="amount">$10000</span>
+            </li>
+            <li>
+                <span id="text">Minimum Return:</span>
+                <span id="amount">$1500</span>
+            </li>
+            <li>
+                <span id="text">Maximum Return:</span>
+                <span id="amount">$4000</span>
+            </li>
+            <li>
+                <span id="text">Gift Bonus:</span>
+                <span id="amount">$500</span>
+            </li>
+            <li>
+                <span id="text">Duration:</span>
+                <span id="amount">One month</span>
+            </li>
+        </ul>
+        <form action="" method="post" class="class-form">
+            <label for="input-amount">
+                Amount to invest: ($2000 default)
+            </label>
+            <input type="text" name="input-amount" id="input-amount">
+            <button type="submit" id="submit-amount">
+                Join Plan
+            </button>
+        </form>
+    </section>
+    <footer class="all-right">
+        <br>
+        <hr>
+        <br>
+        All Rights Reserved &copy; Broker.com
+    </footer>
+</body>
+<script src="./script/scipts.js"></script>
+</html>

@@ -1,0 +1,519 @@
+
+/* general setings  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+}
+h2{
+    text-align: center;
+    background-color: hsl(195, 100%, 50%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10%;
+    width: 100%;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: blue;
+    border-radius: 5px;
+    margin: 20px 0 30px 0;
+
+}
+label{
+    display: block;
+    font-weight: 400;
+}
+h1{
+    background-color: white;
+    margin-bottom: 5px;
+}
+input{
+    display: block;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+.all-right{
+   text-align: center;
+}
+li{
+    list-style-type: none;
+}
+/* end of general settings  */
+.body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.body > img{
+    height: 20vw;
+    width: 50vw;
+}
+.body > h2{
+    text-align: center;
+    background-color: purple;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10%;
+    width: 100%;
+}
+
+#pop-up{
+ background-color: white;
+ position: absolute;
+ height: 80vh;
+ width: 90vw;
+ margin: 15vh 5vw 5vh 5vw;
+ padding: 5% 0 0 5%;
+ border-radius: 6px;
+transform: scaleX(0);
+ transition: all 1s linear;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro div[i]{
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* login and register page  */
+.form-login{
+    border-radius: 3px;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 1% 5% 5% 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 10vh;
+}
+.form-login *{
+    margin: 8px 0 8px 0;
+}
+.form-login > input{
+    width: 100%;
+    
+    max-width: 416px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-bottom:1px solid rgba(126, 223, 255, .75) ;
+    background: rgba(245, 246, 247, .5);
+    }
+    .form-login > input:focus {
+    	border-bottom: 1px solid rgb(0, 191, 255);
+    	}
+.form-login > h2, p, hr{
+    text-align: center;
+    color: black;
+}
+.form-login > h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.form-login > a{
+    display: block;
+    width: 100%;
+    height: 43px;
+    max-width: 416px;
+    background-color: #1877F2;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* beginning of dashboard page  */
+#sidebar{
+	width: 60%;
+	height: 100vh;
+    position: fixed;
+    color: darkblue;
+    background-color: #fff;
+    display: none;
+}
+#sidebar button{
+    float: right;
+}
+#sidebar a{
+    display: block;
+    background-color: rgb(153, 196, 210);
+    height: clamp(0px, 10vh, 300px);
+    margin: 5vh 2vw 5vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 400ms linear;
+}
+#sidebar a:hover{
+    background-color: lightblue;
+}
+.body-stuff{
+    padding: 2vh 5vw 5vh 5vw;
+}
+
+.body-stuff ul{
+    margin: 5vh 0;
+}
+ .body-stuff li{
+     list-style-type: none;
+     height: 10vh;
+     width: auto;
+     margin: 1vh 2vw 0 1vh;
+     border-radius: 5px;
+     background-color: rgb(153, 196, 210);
+     display: flex;
+     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.body-stuff footer{
+    text-align: center;
+}
+/* end of dashboard page */
+/* beginning of payment page */
+.body-payment{
+    width: 100%;
+    height: 100vh;
+    padding: 2vh 2vh 0 2vh;
+}
+.body-payment h3{
+    margin: 8px 0;
+}
+.body-main{
+    padding: 1vh 2vw 0 2vw;
+}
+.body-main > a{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    box-sizing: 0 0 20px rgb(153, 196, 210);
+}
+#money-info{
+    width: 100%;
+}
+.body-payment input{
+    height: 5vh;
+    width: 100%;
+    background-color: whitesmoke;
+    margin: 1.5vh 0;
+    border: none;
+    border-radius: 10px;
+}
+.body-payment input:hover{
+    background-color: white;
+}
+.body-payment input[name=submit]{
+    width: 50%;
+    margin-top: calc(3vh + 1em);
+}
+.body-payment input[name=submit]{
+    width: 50%;
+}
+/* beginig of index page  */
+.body-index{
+    padding: 2vh 0 ;
+}
+.intro{
+    height: 60vh;
+    position: relative;
+    background: url(./img/bg-login2.jpg);
+}
+.intro > img {
+    position: absolute;
+    width: 100%;
+}
+.intro a{
+    display: block;
+    background-color: #1877F2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.intro > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro > ul >li{
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro > ul >li:first-child{
+    display: block;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro > ul > li{
+    animation: change-text 20s calc(5s * var(--i)) infinite ease-in-out;
+}
+@keyframes change-text {
+    0%{
+       opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    26%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 0;
+    }
+}
+.about{
+   display: flex;
+   flex-direction: row-reverse;
+}
+.about > h3{
+    text-align: center;
+}
+.about img {
+    height: 100%;
+    width: 100%;
+}
+.about > p{
+    width: calc(50% - 6px);
+    text-align: left;
+    margin-right: 6px;
+}
+.testimonies{
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+}
+.testimonies ul{
+    position: relative;
+}
+.testimonies li{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.testimonies  img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+#faq{
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	
+}
+#faq h3{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#faq-list details{
+	background-color: white;
+	margin: 5px 0;
+	padding: 15px;
+	width: 100%;
+}
+#faq-list summary{
+	font-weight: bold;
+	color: grey;
+}
+.contact-us{
+	margin: 0 5vw;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.contact-us img{
+    fill: blue;
+	width: 5vh;
+}
+.flex-contact{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+}
+@media (max-width: 500px){
+    .flex-contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+.address, .phone, .email{
+	background-color: white;
+	box-shadow: 0 0 5px grey, 0 0 10px grey;
+	height: clamp( 25vh, 25vh, 50px);
+    padding:10px ;
+    margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;      
+}
+.message-us{
+    width: 100%;
+	background-color: white;
+	box-shadow: 0 0 10px grey;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#name, #email, #subject {
+ padding: 10px;
+	margin: 20px 0 ;
+	height: 40px;
+	width: 100%;
+}
+#message{
+    padding: 10px;
+	margin: 20px 0;
+	width: 100%;
+}
+.message-us button{
+	width: 60%;
+	height: 40px;
+}
+
+#chat-icon{
+	display: inline;
+    position: sticky;
+	z-index: 10;
+	bottom: 3vh;
+	height: 45px;
+	width: 45px;
+    left: 85vw;
+}
+#whatsapp-icon{
+	display: inline;
+    position: sticky;
+	z-index: 10;
+	bottom: 3vh;
+}
+footer{
+    position: relative;
+    background-color: red;
+}
+/* ending of index page */
+/* beginning of referal page  */
+#invest{
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: .75px;
+    margin: 40px 10px;
+}
+.investment{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 800px){
+    .investment{
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.bronze, .silver, .gold{
+    border: 2px solid white;
+    padding: 20px;
+    margin: 5vh 20px;
+}
+.bronze{
+    background-color: rgb(146, 100, 0);
+    box-shadow: 0 0 10px rgb(146, 100, 0), 0 0 20px rgb(146, 100, 0), 0 0 30px rgb(146, 100, 0),  0 0 40px rgb(146, 100, 0);
+}
+.bronze * {
+    margin: 8px 0;
+}
+.silver{
+    background-color: silver;
+    box-shadow: 0 0 10px silver, 0 0 20px silver, 0 0 30px silver,  0 0 40px silver;
+}
+.silver * {
+    margin: 8px 0;
+}
+.gold{
+    background-color: gold;
+    box-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold,  0 0 40px gold;
+}
+.gold * {
+    margin: 8px 0;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#fixed{
+    color: blue;
+    background-color: pink;
+    padding: 5px;
+    font-size: 13px;
+}
+#class{
+    font-size: 20px;
+    margin-top: 5px;
+}
+#class-amount{
+    margin: 40px 0;
+    text-align: center;
+    font-size: 50px;
+}
+.class-form{
+    margin-top: 40px;
+}
+#input-amount{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+#submit-amount{
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: steelblue;
+}
